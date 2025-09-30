@@ -3,35 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Site Acessível</title>
+  <title>Educação e Plataformas</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Bem-vindo ao meu site acessível</h1>
-    <nav>
+    <h1>Educação engessada pelo excesso de plataformas</h1>
+    <nav aria-label="Menu principal">
       <ul>
-        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#problema">O Problema</a></li>
+        <li><a href="#impacto">Impactos</a></li>
+        <li><a href="#caminhos">Caminhos</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section id="sobre">
-      <h2>Sobre o projeto</h2>
-      <p>Este é um site criado para um trabalho escolar, com foco em acessibilidade e simplicidade.</p>
-      <img src="exemplo.jpg" alt="Imagem ilustrativa de acessibilidade">
+    <section id="problema" class="card">
+      <h2>O Problema</h2>
+      <p>
+        A educação tem sido cada vez mais mediada por plataformas digitais. 
+        Porém, o excesso de sistemas diferentes acaba engessando o processo de aprendizagem 
+        e sobrecarregando alunos e professores.
+      </p>
+      <img src="plataformas.jpg" alt="Ilustração de várias telas representando diferentes plataformas educacionais">
     </section>
 
-    <section id="contato">
-      <h2>Contato</h2>
+    <section id="impacto" class="card">
+      <h2>Impactos na Educação</h2>
+      <ul>
+        <li>Dificuldade de adaptação dos professores</li>
+        <li>Alunos perdidos entre várias ferramentas</li>
+        <li>Falta de padronização no acesso ao conteúdo</li>
+        <li>Tempo gasto com burocracia digital em vez de aprendizagem</li>
+      </ul>
+    </section>
+
+    <section id="caminhos" class="card destaque">
+      <h2>Possíveis Caminhos</h2>
+      <p>
+        Para superar esse desafio, é preciso investir em plataformas unificadas, acessíveis 
+        e com foco no processo pedagógico, não apenas na tecnologia.  
+      </p>
+      <blockquote>
+        “A tecnologia deve servir à educação, e não o contrário.”
+      </blockquote>
+    </section>
+
+    <section id="contato" class="card">
+      <h2>Entre em contato</h2>
       <form>
         <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome"><br><br>
+        <input type="text" id="nome" name="nome" aria-required="true">
 
-        <label for="msg">Mensagem:</label>
-        <textarea id="msg" name="msg"></textarea><br><br>
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" aria-required="true"></textarea>
 
         <button type="submit">Enviar</button>
       </form>
@@ -39,7 +66,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Meu Site Acessível</p>
+    <p>&copy; 2025 - Site Educacional Acessível</p>
   </footer>
 </body>
 </html>
