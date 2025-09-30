@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #222;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+header, nav, main, footer {
+  padding: 1rem;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+a {
+  color: #0044cc;
+  text-decoration: none;
+}
+
+a:focus, a:hover {
+  outline: 2px solid #0044cc;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+input, textarea, button {
+  font-size: 1rem;
+  padding: 0.5rem;
+  max-width: 400px;
+}
